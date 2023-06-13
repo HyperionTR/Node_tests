@@ -1,0 +1,14 @@
+{
+  "name": "simple_server",
+  "version": "1.0.0",
+  "description": "A simple test of an HTTP server, just to learn NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "fortune"
+  },
+  "author": "Einhänder",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

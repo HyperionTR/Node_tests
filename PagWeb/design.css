@@ -1,0 +1,155 @@
+body {
+    font-size: 1em;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:5;
+}
+
+section{
+    display: inline-block;
+    width: 100%;
+    z-index:1;
+}
+
+div{
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-size:28px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.4s;
+    -moz-transition:background-color 0.4s;
+    transition-timing-function:ease-out;
+    -moz-transition-timing-function:ease-out;
+}
+
+li a:hover {
+    background-color: #AAA;
+
+}
+
+.active {
+    background-color: #4CAF50;
+}
+    
+h1{
+    text-align: center;
+    font-size:38px;
+    font-weight: bold;
+    text-shadow:silver 1px 1px 1px;
+}
+
+h2{
+    text-align:center;
+    font-size:35px;
+    text-shadow:azure 2px 2px 2px;
+}
+
+hr{
+    border-color:#8cf1ff;
+}
+/* grid content, indica el contenedor de tipo grid */
+.grid-cont{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 48% 48%;
+    grid-row-gap:15px;
+    grid-column-gap:5px;
+}
+
+.grid-cont > div{
+    position: relative;
+    right:0;
+}
+
+/* Fin de codigo para grid */
+
+aside.Rdiv{
+	width:70%;
+	float:right;
+	height:300px;
+    text-align: center;
+}
+
+aside.Ldiv{
+	width:30%;
+	float:left;
+	height:300px;
+
+}
+/*
+Secciones #40dbef
+*/
+
+section{
+    margin-bottom: 40px;
+}
+
+div.principal{
+    display: block;
+    height:350px;
+    background-color: #40dbef;
+    position:relative;
+    padding:10px;
+    margin-bottom:25px;
+}
+
+div.second{
+    display: inline-block;
+    width:400px;
+    height:200px;
+    background-color: #8cf1ff;
+    padding:8px;
+}
+
+div.second img{
+    width: 100%;
+    height: 100%;
+}
+
+.bigImg{
+    width:40%;
+    height:100%;
+    display: inline-block;
+    margin-right:25px;
+
+}
+
+.imgInfo{
+    width:50%;
+    height:100%;
+    display: inline-block;
+    position:absolute;
+    top:10%;
+}
+
+aside a{
+    width:90%;
+    height:90%;
+    font-size:0.9em;
+    text-decoration:none;
+    color:black;
+}
