@@ -27,9 +27,21 @@ app.get("/", async (resquest, response) => {
 	}
 });
 
+// ESCON - Cryptography page
+app.get("/crypto", async (resquest, response) => {
+	// Sending the cryptography page
+	try {
+		response.send( await readFile("Crypto/index.html", "utf-8"));
+	} catch (error) {
+		response.status(500).send("Sorry, an error ocurried...");
+		console.log(`So, this ocurried... ${error}`);
+	}
+});
+
 // Escuchamos en el puerto 3000, o en el puerto especificado por ENV
-app.listen( process.env.PORT || 3000, () => console.log("Servidor HTTP ejecutándose en http://localhost:3000"));
+app.listen( process.env.PORT || 3000, () => console.log(`Servidor HTTP ejecutándose en http://localhost:${process.env.PORT || 3000}`));
 
 // Defining the use of "static" elements, such as CSS and JS
 app.use( express.static("PagWeb") );
 app.use( express.static("Project-Ellipsy") );
+app.use( express.static("Crypto") );
