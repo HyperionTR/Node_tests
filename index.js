@@ -27,7 +27,7 @@ app.get("/", async (resquest, response) => {
 	}
 });
 
-// ESCON - Cryptography page
+// ESCOM - Cryptography page
 app.get("/crypto", async (resquest, response) => {
 	// Sending the cryptography page
 	try {

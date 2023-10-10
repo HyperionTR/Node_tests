@@ -4,11 +4,14 @@
   "description": "A simple test of an HTTP server, just to learn NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "fortune"
+    "test": "fortune",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Einhänder",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
   }
 }

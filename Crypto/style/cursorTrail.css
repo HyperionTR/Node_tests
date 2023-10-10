@@ -1,0 +1,14 @@
+/* UN div que simplemente se ve como un punto */
+.point {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgb(169,255,251);
+	background: radial-gradient(circle, rgba(169,255,251,1) 0%, rgba(31, 122, 114, 0) 45%, rgba(0,0,0,0) 100%); 
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	position: absolute;
+	transform: translate(-50%, -50%); /* Para que el centro del punto sea el cursor */
+	pointer-events: none; /* Para que el punto no interfiera con el cursor */
+}
